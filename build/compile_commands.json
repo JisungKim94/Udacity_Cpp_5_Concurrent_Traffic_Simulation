@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -isystem /usr/local/include/opencv4  -std=c++17 -pthread -g   -o CMakeFiles/traffic_simulation.dir/src/Graphics.cpp.o -c /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/src/Graphics.cpp",
+  "file": "/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/src/Graphics.cpp"
+},
+{
+  "directory": "/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -isystem /usr/local/include/opencv4  -std=c++17 -pthread -g   -o CMakeFiles/traffic_simulation.dir/src/Intersection.cpp.o -c /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/src/Intersection.cpp",
+  "file": "/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/src/Intersection.cpp"
+},
+{
+  "directory": "/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -isystem /usr/local/include/opencv4  -std=c++17 -pthread -g   -o CMakeFiles/traffic_simulation.dir/src/Street.cpp.o -c /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/src/Street.cpp",
+  "file": "/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/src/Street.cpp"
+},
+{
+  "directory": "/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -isystem /usr/local/include/opencv4  -std=c++17 -pthread -g   -o CMakeFiles/traffic_simulation.dir/src/TrafficLight.cpp.o -c /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/src/TrafficLight.cpp",
+  "file": "/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/src/TrafficLight.cpp"
+},
+{
+  "directory": "/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -isystem /usr/local/include/opencv4  -std=c++17 -pthread -g   -o CMakeFiles/traffic_simulation.dir/src/TrafficObject.cpp.o -c /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/src/TrafficObject.cpp",
+  "file": "/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/src/TrafficObject.cpp"
+},
+{
+  "directory": "/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -isystem /usr/local/include/opencv4  -std=c++17 -pthread -g   -o CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-Final.cpp.o -c /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/src/TrafficSimulator-Final.cpp",
+  "file": "/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/src/TrafficSimulator-Final.cpp"
+},
+{
+  "directory": "/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -isystem /usr/local/include/opencv4  -std=c++17 -pthread -g   -o CMakeFiles/traffic_simulation.dir/src/Vehicle.cpp.o -c /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/src/Vehicle.cpp",
+  "file": "/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/src/Vehicle.cpp"
+}
+]

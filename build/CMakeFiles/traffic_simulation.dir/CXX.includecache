@@ -77,12 +77,16 @@ TrafficObject.h
 /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/src/TrafficObject.h
 
 /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/src/TrafficLight.cpp
-TrafficLight.h
-/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/src/TrafficLight.h
+future
+-
 iostream
 -
 random
 -
+thread
+-
+TrafficLight.h
+/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/src/TrafficLight.h
 
 /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/src/TrafficLight.h
 TrafficObject.h

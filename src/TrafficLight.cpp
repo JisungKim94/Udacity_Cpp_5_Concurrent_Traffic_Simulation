@@ -1,6 +1,9 @@
-#include "TrafficLight.h"
+#include <future>
 #include <iostream>
 #include <random>
+#include <thread>
+
+#include "TrafficLight.h"
 
 /* Implementation of class "MessageQueue" */
 
@@ -39,7 +42,7 @@ void TrafficLight::waitForGreen() {
     if (green == _lightphases.receive()) {
       return;
     }
-    std::this_thread::sleep_for(std::chrono::milliseconds(1));
+    // std::this_thread::sleep_for(std::chrono::milliseconds(1));
   }
 }
 
@@ -52,23 +55,36 @@ void TrafficLight::simulate() {
   threads.emplace_back(std::thread(&TrafficLight::cycleThroughPhases, this));
 }
 
-// virtual function which is executed in a thread
 void TrafficLight::cycleThroughPhases() {
-  // Implement the function with an infinite loop that measures the time between
-  // two loop cycles and toggles the current phase of the traffic light between
-  // red and green and sends an update method to the message queue using move
-  // semantics. The cycle duration should be a random value between 4 and 6
+  // FP.2a : Implement the function with an infinite loop that measures the time
+  // between two loop cycles and toggles the current phase of the traffic light
+  // between red and green and sends an update method to the message queue using
+  // move semantics. The cycle duration should be a random value between 4 and 6
   // seconds. Also, the while-loop should use std::this_thread::sleep_for to
   // wait 1ms between two cycles.
+  std::random_device rd;
+  std::mt19937 gen(rd());
+  std::uniform_int_distribution<int> dist(4000, 6000);
+  int cycleDuration = dist(gen);
+
+  auto lastSwitchedTime = std::chrono::system_clock::now();
   while (true) {
-    std::this_thread::sleep_for(std::chrono::milliseconds(
-        4000 + (int)(2000 * ((float)rand()) / (float)RAND_MAX)));
-    if (red == _currentPhase) {
-      _currentPhase = green;
-    } else if (green == _currentPhase) {
-      _currentPhase = red;
-    }
     std::this_thread::sleep_for(std::chrono::milliseconds(1));
-    _lightphases.send(std::move(_currentPhase));
+
+    auto tmpSeconds = std::chrono::duration_cast<std::chrono::milliseconds>(
+        std::chrono::system_clock::now() - lastSwitchedTime);
+    int durationSinceSwitched = tmpSeconds.count();
+
+    if (durationSinceSwitched >= cycleDuration) {
+      _currentPhase = _currentPhase == red ? green : red;
+
+      auto sentFuture =
+          std::async(std::launch::async, &MessageQueue<TrafficLightPhase>::send,
+                     &_lightphases, std::move(_currentPhase));
+      sentFuture.wait();
+
+      lastSwitchedTime = std::chrono::system_clock::now();
+      cycleDuration = dist(gen);
+    }
   }
 }
