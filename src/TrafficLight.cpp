@@ -63,9 +63,9 @@ void TrafficLight::cycleThroughPhases() {
   // seconds. Also, the while-loop should use std::this_thread::sleep_for to
   // wait 1ms between two cycles.
   std::random_device rd;
-  std::mt19937 gen(rd());
+  std::mt19937 eng(rd());
   std::uniform_int_distribution<int> dist(4000, 6000);
-  int cycleDuration = dist(gen);
+  int cycleDuration = dist(eng);
 
   auto lastSwitchedTime = std::chrono::system_clock::now();
   while (true) {
@@ -84,7 +84,7 @@ void TrafficLight::cycleThroughPhases() {
       sentFuture.wait();
 
       lastSwitchedTime = std::chrono::system_clock::now();
-      cycleDuration = dist(gen);
+      cycleDuration = dist(eng);
     }
   }
 }
