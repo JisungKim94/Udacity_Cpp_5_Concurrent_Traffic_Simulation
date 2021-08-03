@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/src/Intersection.h
+TrafficObject.h
+/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/src/TrafficObject.h
+future
+-
+memory
+-
+mutex
+-
+vector
+-
+
+/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/src/Street.h
+TrafficObject.h
+/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/src/TrafficObject.h
+
+/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/src/TrafficObject.h
+thread
+-
+vector
+-
+
+/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/src/Vehicle.cpp
+Vehicle.h
+/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/src/Vehicle.h
+Intersection.h
+/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/src/Intersection.h
+Street.h
+/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/src/Street.h
+iostream
+-
+random
+-
+
+/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/src/Vehicle.h
+TrafficObject.h
+/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/src/TrafficObject.h
+
