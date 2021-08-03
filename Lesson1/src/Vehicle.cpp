@@ -8,7 +8,8 @@ Vehicle::Vehicle() {
   _currStreet = nullptr;
   _posStreet = 0.0;
   _type = ObjectType::objectVehicle;
-  _speed = 400; // m/s
+  _speed = rand() % (500 - 200 + 1) + 200; // 2~500m/s
+  // _speed = 500; // 500m/s
 }
 
 void Vehicle::setCurrentDestination(std::shared_ptr<Intersection> destination) {
@@ -64,6 +65,7 @@ void Vehicle::drive() {
                : _currStreet->getInIntersection();
 
       double x1, y1, x2, y2, xv, yv, dx, dy, l;
+
       i1->getPosition(x1, y1);
       i2->getPosition(x2, y2);
       dx = x2 - x1;
