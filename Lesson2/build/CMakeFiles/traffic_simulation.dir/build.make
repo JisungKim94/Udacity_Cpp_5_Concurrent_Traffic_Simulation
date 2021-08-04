@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1
+CMAKE_SOURCE_DIR = /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/build
+CMAKE_BINARY_DIR = /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/traffic_simulation.dir/depend.make
@@ -59,81 +59,81 @@ include CMakeFiles/traffic_simulation.dir/flags.make
 
 CMakeFiles/traffic_simulation.dir/src/Graphics.cpp.o: CMakeFiles/traffic_simulation.dir/flags.make
 CMakeFiles/traffic_simulation.dir/src/Graphics.cpp.o: ../src/Graphics.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/traffic_simulation.dir/src/Graphics.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/traffic_simulation.dir/src/Graphics.cpp.o -c /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/src/Graphics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/traffic_simulation.dir/src/Graphics.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/traffic_simulation.dir/src/Graphics.cpp.o -c /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/src/Graphics.cpp
 
 CMakeFiles/traffic_simulation.dir/src/Graphics.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/traffic_simulation.dir/src/Graphics.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/src/Graphics.cpp > CMakeFiles/traffic_simulation.dir/src/Graphics.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/src/Graphics.cpp > CMakeFiles/traffic_simulation.dir/src/Graphics.cpp.i
 
 CMakeFiles/traffic_simulation.dir/src/Graphics.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/traffic_simulation.dir/src/Graphics.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/src/Graphics.cpp -o CMakeFiles/traffic_simulation.dir/src/Graphics.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/src/Graphics.cpp -o CMakeFiles/traffic_simulation.dir/src/Graphics.cpp.s
 
 CMakeFiles/traffic_simulation.dir/src/Intersection.cpp.o: CMakeFiles/traffic_simulation.dir/flags.make
 CMakeFiles/traffic_simulation.dir/src/Intersection.cpp.o: ../src/Intersection.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/traffic_simulation.dir/src/Intersection.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/traffic_simulation.dir/src/Intersection.cpp.o -c /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/src/Intersection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/traffic_simulation.dir/src/Intersection.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/traffic_simulation.dir/src/Intersection.cpp.o -c /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/src/Intersection.cpp
 
 CMakeFiles/traffic_simulation.dir/src/Intersection.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/traffic_simulation.dir/src/Intersection.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/src/Intersection.cpp > CMakeFiles/traffic_simulation.dir/src/Intersection.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/src/Intersection.cpp > CMakeFiles/traffic_simulation.dir/src/Intersection.cpp.i
 
 CMakeFiles/traffic_simulation.dir/src/Intersection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/traffic_simulation.dir/src/Intersection.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/src/Intersection.cpp -o CMakeFiles/traffic_simulation.dir/src/Intersection.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/src/Intersection.cpp -o CMakeFiles/traffic_simulation.dir/src/Intersection.cpp.s
 
 CMakeFiles/traffic_simulation.dir/src/Street.cpp.o: CMakeFiles/traffic_simulation.dir/flags.make
 CMakeFiles/traffic_simulation.dir/src/Street.cpp.o: ../src/Street.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/traffic_simulation.dir/src/Street.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/traffic_simulation.dir/src/Street.cpp.o -c /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/src/Street.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/traffic_simulation.dir/src/Street.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/traffic_simulation.dir/src/Street.cpp.o -c /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/src/Street.cpp
 
 CMakeFiles/traffic_simulation.dir/src/Street.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/traffic_simulation.dir/src/Street.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/src/Street.cpp > CMakeFiles/traffic_simulation.dir/src/Street.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/src/Street.cpp > CMakeFiles/traffic_simulation.dir/src/Street.cpp.i
 
 CMakeFiles/traffic_simulation.dir/src/Street.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/traffic_simulation.dir/src/Street.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/src/Street.cpp -o CMakeFiles/traffic_simulation.dir/src/Street.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/src/Street.cpp -o CMakeFiles/traffic_simulation.dir/src/Street.cpp.s
 
 CMakeFiles/traffic_simulation.dir/src/TrafficObject.cpp.o: CMakeFiles/traffic_simulation.dir/flags.make
 CMakeFiles/traffic_simulation.dir/src/TrafficObject.cpp.o: ../src/TrafficObject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/traffic_simulation.dir/src/TrafficObject.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/traffic_simulation.dir/src/TrafficObject.cpp.o -c /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/src/TrafficObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/traffic_simulation.dir/src/TrafficObject.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/traffic_simulation.dir/src/TrafficObject.cpp.o -c /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/src/TrafficObject.cpp
 
 CMakeFiles/traffic_simulation.dir/src/TrafficObject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/traffic_simulation.dir/src/TrafficObject.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/src/TrafficObject.cpp > CMakeFiles/traffic_simulation.dir/src/TrafficObject.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/src/TrafficObject.cpp > CMakeFiles/traffic_simulation.dir/src/TrafficObject.cpp.i
 
 CMakeFiles/traffic_simulation.dir/src/TrafficObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/traffic_simulation.dir/src/TrafficObject.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/src/TrafficObject.cpp -o CMakeFiles/traffic_simulation.dir/src/TrafficObject.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/src/TrafficObject.cpp -o CMakeFiles/traffic_simulation.dir/src/TrafficObject.cpp.s
 
-CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L1.cpp.o: CMakeFiles/traffic_simulation.dir/flags.make
-CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L1.cpp.o: ../src/TrafficSimulator-L1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L1.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L1.cpp.o -c /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/src/TrafficSimulator-L1.cpp
+CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L2.cpp.o: CMakeFiles/traffic_simulation.dir/flags.make
+CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L2.cpp.o: ../src/TrafficSimulator-L2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L2.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L2.cpp.o -c /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/src/TrafficSimulator-L2.cpp
 
-CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L1.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L1.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/src/TrafficSimulator-L1.cpp > CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L1.cpp.i
+CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L2.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/src/TrafficSimulator-L2.cpp > CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L2.cpp.i
 
-CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L1.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L1.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/src/TrafficSimulator-L1.cpp -o CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L1.cpp.s
+CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L2.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/src/TrafficSimulator-L2.cpp -o CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L2.cpp.s
 
 CMakeFiles/traffic_simulation.dir/src/Vehicle.cpp.o: CMakeFiles/traffic_simulation.dir/flags.make
 CMakeFiles/traffic_simulation.dir/src/Vehicle.cpp.o: ../src/Vehicle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/traffic_simulation.dir/src/Vehicle.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/traffic_simulation.dir/src/Vehicle.cpp.o -c /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/src/Vehicle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/traffic_simulation.dir/src/Vehicle.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/traffic_simulation.dir/src/Vehicle.cpp.o -c /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/src/Vehicle.cpp
 
 CMakeFiles/traffic_simulation.dir/src/Vehicle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/traffic_simulation.dir/src/Vehicle.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/src/Vehicle.cpp > CMakeFiles/traffic_simulation.dir/src/Vehicle.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/src/Vehicle.cpp > CMakeFiles/traffic_simulation.dir/src/Vehicle.cpp.i
 
 CMakeFiles/traffic_simulation.dir/src/Vehicle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/traffic_simulation.dir/src/Vehicle.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/src/Vehicle.cpp -o CMakeFiles/traffic_simulation.dir/src/Vehicle.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/src/Vehicle.cpp -o CMakeFiles/traffic_simulation.dir/src/Vehicle.cpp.s
 
 # Object files for target traffic_simulation
 traffic_simulation_OBJECTS = \
@@ -141,7 +141,7 @@ traffic_simulation_OBJECTS = \
 "CMakeFiles/traffic_simulation.dir/src/Intersection.cpp.o" \
 "CMakeFiles/traffic_simulation.dir/src/Street.cpp.o" \
 "CMakeFiles/traffic_simulation.dir/src/TrafficObject.cpp.o" \
-"CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L1.cpp.o" \
+"CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L2.cpp.o" \
 "CMakeFiles/traffic_simulation.dir/src/Vehicle.cpp.o"
 
 # External object files for target traffic_simulation
@@ -151,7 +151,7 @@ traffic_simulation: CMakeFiles/traffic_simulation.dir/src/Graphics.cpp.o
 traffic_simulation: CMakeFiles/traffic_simulation.dir/src/Intersection.cpp.o
 traffic_simulation: CMakeFiles/traffic_simulation.dir/src/Street.cpp.o
 traffic_simulation: CMakeFiles/traffic_simulation.dir/src/TrafficObject.cpp.o
-traffic_simulation: CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L1.cpp.o
+traffic_simulation: CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L2.cpp.o
 traffic_simulation: CMakeFiles/traffic_simulation.dir/src/Vehicle.cpp.o
 traffic_simulation: CMakeFiles/traffic_simulation.dir/build.make
 traffic_simulation: /usr/local/lib/libopencv_dnn.so.4.2.0
@@ -170,7 +170,7 @@ traffic_simulation: /usr/local/lib/libopencv_flann.so.4.2.0
 traffic_simulation: /usr/local/lib/libopencv_imgproc.so.4.2.0
 traffic_simulation: /usr/local/lib/libopencv_core.so.4.2.0
 traffic_simulation: CMakeFiles/traffic_simulation.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable traffic_simulation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable traffic_simulation"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/traffic_simulation.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -183,6 +183,6 @@ CMakeFiles/traffic_simulation.dir/clean:
 .PHONY : CMakeFiles/traffic_simulation.dir/clean
 
 CMakeFiles/traffic_simulation.dir/depend:
-	cd /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1 /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1 /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/build /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/build /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/build/CMakeFiles/traffic_simulation.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2 /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2 /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/build /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/build /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/build/CMakeFiles/traffic_simulation.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/traffic_simulation.dir/depend
 

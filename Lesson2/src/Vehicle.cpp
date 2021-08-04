@@ -1,6 +1,7 @@
 #include "Vehicle.h"
 #include "Intersection.h"
 #include "Street.h"
+#include <future>
 #include <iostream>
 #include <random>
 
@@ -9,6 +10,7 @@ Vehicle::Vehicle() {
   _posStreet = 0.0;
   _type = ObjectType::objectVehicle;
   _speed = 400; // m/s
+  // _speed = rand() % (500 - 200 + 1) + 200; // 2~500m/s
 }
 
 void Vehicle::setCurrentDestination(std::shared_ptr<Intersection> destination) {
@@ -79,6 +81,17 @@ void Vehicle::drive() {
         // _currDestination and a shared pointer to this using the
         // get_shared_this() function. Then, wait for the data to be available
         // before proceeding to slow down.
+
+        std::future<void> ftr = std::async(&Intersection::addVehicleToQueue,
+                                           _currDestination, get_shared_this());
+        // std::thread t1 = std::thread(&Vehicle::addID, v1, 1); 이 개념으로
+        // 생각하면 댐, make_thread_with_arg_3_class_member.cpp에 정리되어
+        // 있는데~ 간단히 말하자면
+        // std::async(&Class::method, Instance, method's arg1, arg2 ...);
+        // 이런 표기법
+
+        ftr.get();
+        // get에 wait이 포함된다. (단, 두 번 get사용하면 안댐)
 
         // slow down and set intersection flag
         _speed /= 10.0;

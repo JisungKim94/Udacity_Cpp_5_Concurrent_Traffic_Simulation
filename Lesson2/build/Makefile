@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1
+CMAKE_SOURCE_DIR = /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/build
+CMAKE_BINARY_DIR = /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/build/CMakeFiles /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/build/CMakeFiles /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson1/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kjs/My_Workspace/Udacity_Cpp_5_Concurrent_Traffic_Simulation/Lesson2/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -231,32 +231,32 @@ src/TrafficObject.cpp.s:
 	$(MAKE) -f CMakeFiles/traffic_simulation.dir/build.make CMakeFiles/traffic_simulation.dir/src/TrafficObject.cpp.s
 .PHONY : src/TrafficObject.cpp.s
 
-src/TrafficSimulator-L1.o: src/TrafficSimulator-L1.cpp.o
+src/TrafficSimulator-L2.o: src/TrafficSimulator-L2.cpp.o
 
-.PHONY : src/TrafficSimulator-L1.o
+.PHONY : src/TrafficSimulator-L2.o
 
 # target to build an object file
-src/TrafficSimulator-L1.cpp.o:
-	$(MAKE) -f CMakeFiles/traffic_simulation.dir/build.make CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L1.cpp.o
-.PHONY : src/TrafficSimulator-L1.cpp.o
+src/TrafficSimulator-L2.cpp.o:
+	$(MAKE) -f CMakeFiles/traffic_simulation.dir/build.make CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L2.cpp.o
+.PHONY : src/TrafficSimulator-L2.cpp.o
 
-src/TrafficSimulator-L1.i: src/TrafficSimulator-L1.cpp.i
+src/TrafficSimulator-L2.i: src/TrafficSimulator-L2.cpp.i
 
-.PHONY : src/TrafficSimulator-L1.i
+.PHONY : src/TrafficSimulator-L2.i
 
 # target to preprocess a source file
-src/TrafficSimulator-L1.cpp.i:
-	$(MAKE) -f CMakeFiles/traffic_simulation.dir/build.make CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L1.cpp.i
-.PHONY : src/TrafficSimulator-L1.cpp.i
+src/TrafficSimulator-L2.cpp.i:
+	$(MAKE) -f CMakeFiles/traffic_simulation.dir/build.make CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L2.cpp.i
+.PHONY : src/TrafficSimulator-L2.cpp.i
 
-src/TrafficSimulator-L1.s: src/TrafficSimulator-L1.cpp.s
+src/TrafficSimulator-L2.s: src/TrafficSimulator-L2.cpp.s
 
-.PHONY : src/TrafficSimulator-L1.s
+.PHONY : src/TrafficSimulator-L2.s
 
 # target to generate assembly for a file
-src/TrafficSimulator-L1.cpp.s:
-	$(MAKE) -f CMakeFiles/traffic_simulation.dir/build.make CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L1.cpp.s
-.PHONY : src/TrafficSimulator-L1.cpp.s
+src/TrafficSimulator-L2.cpp.s:
+	$(MAKE) -f CMakeFiles/traffic_simulation.dir/build.make CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-L2.cpp.s
+.PHONY : src/TrafficSimulator-L2.cpp.s
 
 src/Vehicle.o: src/Vehicle.cpp.o
 
@@ -306,9 +306,9 @@ help:
 	@echo "... src/TrafficObject.o"
 	@echo "... src/TrafficObject.i"
 	@echo "... src/TrafficObject.s"
-	@echo "... src/TrafficSimulator-L1.o"
-	@echo "... src/TrafficSimulator-L1.i"
-	@echo "... src/TrafficSimulator-L1.s"
+	@echo "... src/TrafficSimulator-L2.o"
+	@echo "... src/TrafficSimulator-L2.i"
+	@echo "... src/TrafficSimulator-L2.s"
 	@echo "... src/Vehicle.o"
 	@echo "... src/Vehicle.i"
 	@echo "... src/Vehicle.s"
