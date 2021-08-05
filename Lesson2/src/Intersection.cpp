@@ -68,7 +68,27 @@ void Intersection::addVehicleToQueue(std::shared_ptr<Vehicle> vehicle) {
   // create promise and future
   std::promise<void> prms;
   std::future<void> ftr = prms.get_future();
-  _waitingVehicles.pushBack(vehicle, std::move(prms));
+  // _waitingVehicles.pushBack(vehicle, std::move(prms));
+
+  /*
+  ***********************************************************************
+  */
+  // below : 쓰레드 쓰라는 말은 아닌가벼.. task L2.2는 걍 위에 방식으로
+  // 구현하라는 뜻임
+  // std::thread t(&WaitingVehicles::pushBack, &_waitingVehicles, vehicle,
+  //               std::move(prms));
+  // t.join();
+
+  // std::thread t1 = std::thread(&Vehicle::addID, &v1, 1); 이 개념으로
+  // 생각하면 댐, make_thread_with_arg_3_class_member.cpp에 정리되어
+  // 있는데~ 간단히 말하자면
+  // std::async(&Class::method, &Instance, method's arg1, arg2 ...);
+  // 이런 표기법 or &Instance자리에 &없이 shared_ptr사용
+  /*
+  ***********************************************************************
+  */
+
+  ftr.wait();
 
   std::cout << "Intersection #" << _id << ": Vehicle #" << vehicle->getID()
             << " is granted entry." << std::endl;

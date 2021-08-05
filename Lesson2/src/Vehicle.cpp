@@ -84,11 +84,11 @@ void Vehicle::drive() {
 
         std::future<void> ftr = std::async(&Intersection::addVehicleToQueue,
                                            _currDestination, get_shared_this());
-        // std::thread t1 = std::thread(&Vehicle::addID, v1, 1); 이 개념으로
+        // std::thread t1 = std::thread(&Vehicle::addID, &v1, 1); 이 개념으로
         // 생각하면 댐, make_thread_with_arg_3_class_member.cpp에 정리되어
         // 있는데~ 간단히 말하자면
-        // std::async(&Class::method, Instance, method's arg1, arg2 ...);
-        // 이런 표기법
+        // std::async(&Class::method, &Instance, method's arg1, arg2 ...);
+        // 이런 표기법 or &Instance자리에 &없이 shared_ptr사용
 
         ftr.get();
         // get에 wait이 포함된다. (단, 두 번 get사용하면 안댐)
