@@ -100,7 +100,7 @@ void Intersection::addVehicleToQueue(std::shared_ptr<Vehicle> vehicle) {
 
   ftr.wait();
 
-  std::cout << "Intersection #" << _id << ": Vehicle #" << vehicle->getID()
+  std::cout << "Intersection #" << _id << ": Vehicle #" << vehicle->get_vehID()
             << " is granted entry." << std::endl;
 }
 

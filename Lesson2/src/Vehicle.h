@@ -12,6 +12,7 @@ class Vehicle : public TrafficObject,
 public:
   // constructor / desctructor
   Vehicle();
+  ~Vehicle();
 
   // getters / setters
   void setCurrentStreet(std::shared_ptr<Street> street) {
@@ -25,6 +26,11 @@ public:
   // miscellaneous
   std::shared_ptr<Vehicle> get_shared_this() { return shared_from_this(); }
 
+  int get_vehID() { return _vehid; }
+
+protected:
+  int _vehid;
+
 private:
   // typical behaviour methods
   void drive();
@@ -34,6 +40,7 @@ private:
       _currDestination; // destination to which the vehicle is currently driving
   double _posStreet;    // position on current street
   double _speed;        // ego speed in m/s
+  static int _vehid_cnt;
 };
 
 #endif

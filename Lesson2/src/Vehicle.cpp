@@ -5,13 +5,22 @@
 #include <iostream>
 #include <random>
 
+int Vehicle::_vehid_cnt = 0;
+
 Vehicle::Vehicle() {
   _currStreet = nullptr;
   _posStreet = 0.0;
   _type = ObjectType::objectVehicle;
-  _speed = 400; // m/s
-  // _speed = rand() % (500 - 200 + 1) + 200; // 2~500m/s
+  // _speed = 400; // m/s
+  _speed = (rand() % (5 - 2 + 1) + 2) * 100; // 2~500m/s
+  _vehid = _vehid_cnt;
+  _vehid_cnt++;
+
+  // data race 현상이 있네... 슈바르....? 여러번 run 해보면 vehicle id 가
+  // 순서대로 안나옴
 }
+
+Vehicle::~Vehicle() { _vehid_cnt--; }
 
 void Vehicle::setCurrentDestination(std::shared_ptr<Intersection> destination) {
   // update destination
@@ -29,7 +38,7 @@ void Vehicle::simulate() {
 // virtual function which is executed in a thread
 void Vehicle::drive() {
   // print id of the current thread
-  std::cout << "Vehicle #" << _id
+  std::cout << "Vehicle #" << _vehid
             << "::drive: thread id = " << std::this_thread::get_id()
             << std::endl;
 
