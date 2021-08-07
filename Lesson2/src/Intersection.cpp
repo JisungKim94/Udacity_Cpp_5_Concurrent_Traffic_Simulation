@@ -20,12 +20,22 @@ void WaitingVehicles::pushBack(std::shared_ptr<Vehicle> vehicle,
 
 void WaitingVehicles::permitEntryToFirstInQueue() {
   // Task L2.3 : First, get the entries from the front of _promises and
-  // _vehicles. Then, fulfill promise and send signal back that permission to
-  // enter has been granted. Finally, remove the front elements from both
-  // queues.
+  // get entries from the front of both queues
+  // begin : vector첫번째 자리의 주소를 가리키는 pointer 반환
+  // begin에 의해 반환되는 애는 vector<type>::iterator 라는 type을 가진다.
+  // front : vector첫번째 자리 value 반환
+  auto frontPromise = _promises.begin();
+  auto frontVehicle = _vehicles.begin();
 
-  _promises.front().get_future();
-  _vehicles.front();
+  // fulfill promise and send signal back that permission to enter has been
+  // granted
+  frontPromise->set_value();
+
+  // remove front elements from both queues
+  // erase : 해당 인덱스의 데이터를 지우고 그 뒤에 있는 데이터를 남은 자리만큼
+  // 앞으로 이동시킨다. arg = vector<type>::iterator 불리는 begin의 반환 type
+  _vehicles.erase(frontVehicle);
+  _promises.erase(frontPromise);
 }
 
 /* Implementation of class "Intersection" */
@@ -68,7 +78,7 @@ void Intersection::addVehicleToQueue(std::shared_ptr<Vehicle> vehicle) {
   // create promise and future
   std::promise<void> prms;
   std::future<void> ftr = prms.get_future();
-  // _waitingVehicles.pushBack(vehicle, std::move(prms));
+  _waitingVehicles.pushBack(vehicle, std::move(prms));
 
   /*
   ***********************************************************************
